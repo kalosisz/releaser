@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.0](https://github.com/kalosisz/releaser/compare/v1.0.0-uat...v1.0.0) (2023-08-30)
+
+
+### Miscellaneous Chores
+
+* release prod ([#39](https://github.com/kalosisz/releaser/issues/39)) ([22bf92b](https://github.com/kalosisz/releaser/commit/22bf92bba3440b69bd2f00184a901cb3abbcaa53))
+
 ## 1.0.0-uat (2023-08-30)
 
 
