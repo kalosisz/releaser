@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0-uat](https://github.com/kalosisz/releaser/compare/test-v1.1.0-uat...test-v1.2.0-uat) (2023-08-30)
+
+
+### Features
+
+* 233 ([394848a](https://github.com/kalosisz/releaser/commit/394848a5187e17d655b1a7fca6c160270d294492))
+
 ## [1.1.0-uat](https://github.com/kalosisz/releaser/compare/test-v1.0.0-uat...test-v1.1.0-uat) (2023-08-30)
 
 
