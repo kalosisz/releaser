@@ -18,3 +18,4 @@ jobs:
           release-type: go
           prerelease: true
           default-branch: uat
+          versioning-strategy: prerelease
