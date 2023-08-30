@@ -1,13 +1,13 @@
 on:
   push:
     branches:
-      - uat
+      - prod
 
 permissions:
   contents: write
   pull-requests: write
 
-name: release-please-uat
+name: release-please-prod
 
 jobs:
   release-please:
@@ -16,8 +16,6 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         with:
           release-type: go
-          prerelease: true
-          default-branch: uat
-          versioning-strategy: prerelease
-          component: test
+          default-branch: prod
+          component: prod
           monorepo-tags: true
