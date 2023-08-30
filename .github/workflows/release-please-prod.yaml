@@ -17,3 +17,5 @@ jobs:
         with:
           release-type: go
           draft-pull-request: true
+          labels: "prod: pending"
+          release-labels: "prod: tagged"

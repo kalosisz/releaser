@@ -17,3 +17,5 @@ jobs:
         with:
           release-type: go
           prerelease: true
+          labels: "test: pending"
+          release-labels: "test: tagged"
