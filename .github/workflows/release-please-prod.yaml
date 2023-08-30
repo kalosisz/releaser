@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - main
+      - prod
 
 permissions:
   contents: write
@@ -16,7 +16,4 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         with:
           release-type: go
-          draft-pull-request: true
-          labels: "prod: pending"
-          release-labels: "prod: tagged"
-          pull-request-title-pattern: "chore(prod): release${component} ${version}"
+          default-branch: prod
