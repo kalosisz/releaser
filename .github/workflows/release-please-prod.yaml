@@ -19,3 +19,4 @@ jobs:
           draft-pull-request: true
           labels: "prod: pending"
           release-labels: "prod: tagged"
+          pull-request-title-pattern: "chore(prod): release${component} ${version}"

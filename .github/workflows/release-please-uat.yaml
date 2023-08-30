@@ -20,3 +20,4 @@ jobs:
           prerelease: true
           labels: "test: pending"
           release-labels: "test: tagged"
+          pull-request-title-pattern: "chore(test): release${component} ${version}"
