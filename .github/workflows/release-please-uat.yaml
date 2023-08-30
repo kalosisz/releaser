@@ -17,7 +17,6 @@ jobs:
         with:
           release-type: go
           prerelease: true
-          default-branch: uat
           versioning-strategy: prerelease
           component: test
           monorepo-tags: true
