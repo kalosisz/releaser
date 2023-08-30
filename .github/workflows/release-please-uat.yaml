@@ -16,6 +16,7 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         with:
           release-type: go
+          changelog-path: CHANGELOG-Test.md
           prerelease: true
           versioning-strategy: prerelease
           component: test

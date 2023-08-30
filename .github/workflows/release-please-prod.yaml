@@ -19,3 +19,4 @@ jobs:
           component: prod
           monorepo-tags: true
           draft-pull-request: true
+          changelog-path: CHANGELOG-Prod.md
