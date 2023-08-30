@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.0](https://github.com/kalosisz/releaser/compare/prod-v1.0.0...prod-v1.0.0) (2023-08-30)
+
+
+### Features
+
+* helo ([#59](https://github.com/kalosisz/releaser/issues/59)) ([0b95801](https://github.com/kalosisz/releaser/commit/0b95801d7d4660b59ef5461b602e80f3f5f30ed5))
+
 ## 1.0.0 (2023-08-30)
 
 
