@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: google-github-actions/release-please-action@v3
+        name: release-please-test
         with:
           release-type: go
           default-branch: master
@@ -23,11 +24,8 @@ jobs:
           component: test
           monorepo-tags: true
 
-  release-please:
-    needs: release-please-test
-    runs-on: ubuntu-latest
-    steps:
       - uses: google-github-actions/release-please-action@v3
+        name: release-please-prod
         with:
           release-type: go
           default-branch: master
@@ -35,4 +33,3 @@ jobs:
           monorepo-tags: true
           draft-pull-request: true
           changelog-path: CHANGELOG-Prod.md
-          release-as: 1.2.0
