@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - main
+      - uat
 
 permissions:
   contents: write
@@ -16,5 +16,9 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         with:
           release-type: go
-          default-branch: uat
           prerelease: true
+          default-branch: uat
+          versioning-strategy: prerelease
+          pull-request-title-pattern: "chore(test): release${component} ${version}"
+          labels: "test: pending"
+          release-labels: "test: tagged"
