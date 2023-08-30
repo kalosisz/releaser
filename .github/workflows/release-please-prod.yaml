@@ -17,3 +17,4 @@ jobs:
         with:
           release-type: go
           default-branch: prod
+          component: prod

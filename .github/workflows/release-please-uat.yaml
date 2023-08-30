@@ -7,7 +7,7 @@ permissions:
   contents: write
   pull-requests: write
 
-name: release-please-uat
+name: release-please-test
 
 jobs:
   release-please:
@@ -19,3 +19,4 @@ jobs:
           prerelease: true
           default-branch: uat
           versioning-strategy: prerelease
+          component: test
