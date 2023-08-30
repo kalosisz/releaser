@@ -24,6 +24,7 @@ jobs:
           monorepo-tags: true
 
   release-please:
+    needs: release-please-test
     runs-on: ubuntu-latest
     steps:
       - uses: google-github-actions/release-please-action@v3
