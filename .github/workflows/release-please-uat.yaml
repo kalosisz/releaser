@@ -1,0 +1,24 @@
+on:
+  push:
+    branches:
+      - uat
+
+permissions:
+  contents: write
+  pull-requests: write
+
+name: release-please-uat
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: go
+          prerelease: true
+          default-branch: uat
+          versioning-strategy: prerelease
+          pull-request-title-pattern: "chore(test): release${component} ${version}"
+          labels: "test: pending"
+          release-labels: "test: tagged"
