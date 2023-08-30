@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - master
+      - aaa
 
 permissions:
   contents: write
@@ -17,7 +17,7 @@ jobs:
         name: release-please-test
         with:
           release-type: go
-          default-branch: master
+          default-branch: aaa
           changelog-path: CHANGELOG-Test.md
           prerelease: true
           versioning-strategy: prerelease
@@ -28,7 +28,7 @@ jobs:
         name: release-please-prod
         with:
           release-type: go
-          default-branch: master
+          default-branch: aaa
           component: prod
           monorepo-tags: true
           draft-pull-request: true
