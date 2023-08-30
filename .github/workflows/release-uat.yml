@@ -1,0 +1,11 @@
+on:
+  release:
+    types:
+      - prereleased
+
+jobs:
+  release-please-test:
+    environment: test
+    runs-on: ubuntu-22.04
+    steps:
+      - run: echo "Release ${{ vars.stage }}"
