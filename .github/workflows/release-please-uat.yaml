@@ -19,6 +19,5 @@ jobs:
           prerelease: true
           default-branch: uat
           versioning-strategy: prerelease
-          pull-request-title-pattern: "chore(test): release${component} ${version}"
-          labels: "test: pending"
-          release-labels: "test: tagged"
+          monorepo-tags: true
+          component: test

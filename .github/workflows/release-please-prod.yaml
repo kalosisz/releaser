@@ -17,6 +17,5 @@ jobs:
         with:
           release-type: go
           default-branch: prod
-          pull-request-title-pattern: "chore(prod): release${component} ${version}"
-          labels: "prod: pending"
-          release-labels: "prod: tagged"
+          monorepo-tags: true
+          component: prod
