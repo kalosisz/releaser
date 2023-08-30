@@ -19,5 +19,4 @@ jobs:
           prerelease: true
           default-branch: uat
           versioning-strategy: prerelease
-          monorepo-tags: true
           component: test
