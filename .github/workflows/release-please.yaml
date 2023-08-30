@@ -7,18 +7,32 @@ permissions:
   contents: write
   pull-requests: write
 
-name: release-please-uat
+name: release-please
 
 jobs:
+  release-please-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: go
+          default-branch: main
+          changelog-path: CHANGELOG-Test.md
+          prerelease: true
+          versioning-strategy: prerelease
+          component: test
+          monorepo-tags: true
+          release-as: 1.0.0-uat
+
   release-please:
     runs-on: ubuntu-latest
     steps:
       - uses: google-github-actions/release-please-action@v3
         with:
           release-type: go
-          changelog-path: CHANGELOG-Test.md
-          prerelease: true
-          versioning-strategy: prerelease
-          component: test
+          default-branch: main
+          component: prod
           monorepo-tags: true
           draft-pull-request: true
+          changelog-path: CHANGELOG-Prod.md
+          release-as: 1.0.0
