@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - main
+      - master
 
 permissions:
   contents: write
@@ -16,7 +16,7 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         with:
           release-type: go
-          default-branch: main
+          default-branch: master
           changelog-path: CHANGELOG-Test.md
           prerelease: true
           versioning-strategy: prerelease
@@ -30,7 +30,7 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         with:
           release-type: go
-          default-branch: main
+          default-branch: master
           component: prod
           monorepo-tags: true
           draft-pull-request: true
