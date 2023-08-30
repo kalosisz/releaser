@@ -22,7 +22,6 @@ jobs:
           versioning-strategy: prerelease
           component: test
           monorepo-tags: true
-          release-as: 1.0.0-uat
 
   release-please:
     runs-on: ubuntu-latest
@@ -35,4 +34,3 @@ jobs:
           monorepo-tags: true
           draft-pull-request: true
           changelog-path: CHANGELOG-Prod.md
-          release-as: 1.0.0
