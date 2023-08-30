@@ -18,3 +18,4 @@ jobs:
           release-type: go
           default-branch: prod
           component: prod
+          monorepo-tags: true

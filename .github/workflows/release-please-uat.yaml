@@ -20,3 +20,4 @@ jobs:
           default-branch: uat
           versioning-strategy: prerelease
           component: test
+          monorepo-tags: true
