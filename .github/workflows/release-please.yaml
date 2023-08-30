@@ -35,3 +35,4 @@ jobs:
           monorepo-tags: true
           draft-pull-request: true
           changelog-path: CHANGELOG-Prod.md
+          release-as: 1.2.0
