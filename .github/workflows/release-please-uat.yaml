@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - uat
+      - main
 
 permissions:
   contents: write
@@ -21,3 +21,4 @@ jobs:
           versioning-strategy: prerelease
           component: test
           monorepo-tags: true
+          draft-pull-request: true

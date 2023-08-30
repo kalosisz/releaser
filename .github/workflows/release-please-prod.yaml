@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - prod
+      - main
 
 permissions:
   contents: write
@@ -19,3 +19,4 @@ jobs:
           default-branch: prod
           component: prod
           monorepo-tags: true
+          draft-pull-request: true
