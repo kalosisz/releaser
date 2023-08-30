@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - uat
+      - main
 
 permissions:
   contents: write
