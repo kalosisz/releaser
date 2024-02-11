@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/kalosisz/releaser/compare/v1.0.0...v1.1.0) (2024-02-11)
+
+
+### Features
+
+* abc2 ([b35a0c5](https://github.com/kalosisz/releaser/commit/b35a0c533863659e686e762dd457ed5f046728fd))
+
 ## 1.0.0 (2024-02-11)
 
 
