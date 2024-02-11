@@ -1,0 +1,26 @@
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+name: release-please-uat
+
+jobs:
+  release-please-prerelease:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v4
+        with:
+          config-file: release-please-config-prerelease.json
+          manifest-file: .release-please-manifest-prerelease.json
+  release-please-prod:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v4
+        with:
+          config-file: release-please-config-prod.json
+          manifest-file: .release-please-manifest-prod.json
